@@ -1,15 +1,15 @@
 from tkinter import *
 
-#تنظیمات ابتدایی
+#Basic settings
 window = Tk()
 window.title("calculator")
-window.iconbitmap("icons/calculator.ico")#window برای عوض کردن عکس
+window.iconbitmap("icons/calculator.ico")
 
-#بدنه اصلی
+#main body
 entry = Entry(window,width=48,borderwidth=10)
-entry.grid(row=0,column=0,columnspan=4)#نوار بالای برنامه به انداره دلخواه تنظیم میشود columnspan
+entry.grid(row=0,column=0,columnspan=4)
 
-#توابع
+#Functions section
 def clear():
     entry.delete(0,END)
 
@@ -78,6 +78,6 @@ button_add = Button(window, text="+",padx=30,pady=23,bg="gray",command=add_numbe
 button_subtraction = Button(window, text="-",padx=31,pady=23,bg="gray",command=subtraction) .grid(row=2,column=3)
 button_multiply = Button(window, text="x",padx=31,pady=23,bg="gray",command=multiply).grid(row=3,column=3)
 button_division = Button(window, text="÷",padx=30,pady=23,bg="gray",command=division) .grid(row=4,column=3)
-# state=DISABLED برای غیر فعال کردن دکمه
-# command #برای وصل کردن تابع به دکمه
+# state=DISABLED #To disable the button
+# command #To attach the function to the button
 window.mainloop()
