@@ -1,18 +1,18 @@
 from tkinter import *
 from PIL import Image , ImageTk
 
-#تنظیمات اصلی
+#Basic settings
 window = Tk()
 window.title("Image Viewer")
 window.iconbitmap("icons/image.ico")
 
-#اضافه کردن عکس ها
+#Add photos
 
 img1 = ImageTk.PhotoImage(Image.open("images/program1.png"))
 img2 = ImageTk.PhotoImage(Image.open("images/program2.png"))
 img4 = ImageTk.PhotoImage(Image.open("images/program4.png"))
 
-#لیست عکس ها
+#The main part
 images_list = [img1,img2,img4]
 main_lable = Label(window, image= img1)
 main_lable.grid(columnspan=3)
