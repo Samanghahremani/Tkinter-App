@@ -3,7 +3,7 @@ from tkinter import messagebox
 
 window = Tk()
 window.title("massagebox")
-window.iconbitmap("image/box.ico")
+
 def callback():
     lable = messagebox.askyesno("a question?","are you the best?")
     if lable == 0:
