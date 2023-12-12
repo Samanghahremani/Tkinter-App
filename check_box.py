@@ -13,7 +13,7 @@ check_val = IntVar()
 checkbox_tool = Checkbutton(window, text="سیاست های ما مورد قبول است؟", variable=check_val)
 checkbox_tool.pack()
 
-# one and the only button for submitting
+# Button to record information
 button = Button(window, text="تایید کردن", command=see_result, border=3,background="lightblue")
 button.pack()
 
