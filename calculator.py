@@ -38,6 +38,7 @@ def add_number():
     first_number = entry.get()
     entry.delete(0,END)
     operator = "add"
+    
 def subtraction():
     global first_number
     global operator
