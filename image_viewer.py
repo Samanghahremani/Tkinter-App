@@ -10,10 +10,10 @@ window.iconbitmap("icons/image.ico")
 
 img1 = ImageTk.PhotoImage(Image.open("images/program1.png"))
 img2 = ImageTk.PhotoImage(Image.open("images/program2.png"))
-img4 = ImageTk.PhotoImage(Image.open("images/program4.png"))
+img3 = ImageTk.PhotoImage(Image.open("images/program3.png"))
 
 #The main part
-images_list = [img1,img2,img4]
+images_list = [img1,img2,img3]
 main_lable = Label(window, image= img1)
 main_lable.grid(columnspan=3)
 status = Label(window, text="image 1 of {}".format(len(images_list)),bg="lightblue",fg="black",relief=SUNKEN)
