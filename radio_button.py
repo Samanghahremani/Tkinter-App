@@ -13,7 +13,7 @@ def av():
         lable2 = Label(window2,text="Thanks").pack()
     elif lable == 0:
         window2 = Toplevel()
-        lable2 = Label(window2,text="boro peye karet").pack()
+        lable2 = Label(window2,text="Thank you").pack()
 
 Radiobutton(window,value=1,text="pizza",variable=ra_val).pack(anchor=W)
 Radiobutton(window,value=2,text="sandwich",variable=ra_val).pack(anchor=W)
