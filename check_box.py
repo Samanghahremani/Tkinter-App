@@ -10,11 +10,11 @@ def see_result():
 
 # checkbox and its placeholder variable
 check_val = IntVar()
-checkbox_tool = Checkbutton(window, text="سیاست های ما مورد قبول است؟", variable=check_val)
+checkbox_tool = Checkbutton(window, text="our privacy policies?", variable=check_val)
 checkbox_tool.pack()
 
 # Button to record information
-button = Button(window, text="تایید کردن", command=see_result, border=3,background="lightblue")
+button = Button(window, text="Submit", command=see_result, border=3,background="lightblue")
 button.pack()
 
 window.mainloop()
